@@ -1,0 +1,270 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Libertinus+Keyboard&display=swap");
+body {
+  font-family: "Libertinus Keyboard";
+} */
+
+/* .home-page {
+  color: blue;
+  text-decoration: none;
+}
+
+.home-page:hover {
+  text-decoration: line-through;
+  color: red;
+  cursor: crosshair;
+}
+
+.home-page:active {
+  text-decoration-color: chartreuse;
+}
+
+.home-page:visited {
+  text-decoration-color: chocolate;
+}
+input {
+  width: 100px;
+}
+
+input:focus {
+  width: 300px;
+}
+
+input:disabled {
+  width: 400px;
+}
+
+div:not(:empty) {
+  color: red;
+}
+
+p.main-text:not(:empty)::before {
+  content: "1 2 3";
+  color: red;
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
+p.main-text:empty::after {
+  content: attr(title);
+  color: red;
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
+p.main-text:not(:empty)::first-letter {
+  color: blue;
+  font-size: 25px;
+}
+
+p.main-text:not(:empty)::first-line {
+  color: blue;
+  font-size: 25px;
+}
+
+p:first-of-type {
+  font-size: 30px;
+} */
+/* header {
+  width: auto;
+}
+.nav-bar {
+  border: 3px solid black;
+  height: 90px;
+}
+
+ul {
+  display: inline;
+  margin-left: 50%;
+}
+
+li {
+  display: inline;
+}
+
+.logo {
+  width: 70px;
+  margin-left: 20px;
+} */
+
+/* /* .penis {
+  position: relative;
+} */
+
+.up {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: antiquewhite;
+  border-radius: 50%;
+}
+
+.mid {
+  position: absolute;
+  width: 500px;
+  height: 150px;
+  background-color: antiquewhite;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  margin-top: 100px;
+  margin-left: 30px;
+}
+
+.vl {
+  position: absolute;
+  background-color: black;
+  width: 3px;
+  height: 130px;
+  margin-left: 400px;
+  margin-top: 110px;
+  z-index: 1;
+}
+
+.hl {
+  position: absolute;
+  background-color: black;
+  width: 30px;
+  height: 3px;
+  margin-left: 500px;
+  margin-top: 175px;
+  z-index: 1;
+}
+
+.down {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: antiquewhite;
+  border-radius: 50%;
+  margin-top: 150px;
+}
+
+.sperm {
+  position: absolute;
+  background-color: rgb(246, 253, 139);
+  width: 20px;
+  height: 40px;
+  margin-top: 175px;
+  margin-left: 550px;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  animation: fall 1s linear infinite;
+  transform: rotate(300deg);
+}
+.sperm:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.sperm:nth-child(2) :nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+@keyframes fall {
+  0% {
+    top: 0;
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    top: 160px;
+    opacity: 0;
+  }
+}
+.sperm:hover {
+  position: absolute;
+  background-color: rgb(238, 235, 231);
+  width: 30px;
+  height: 40px;
+  margin-top: 175px;
+  margin-left: 550px;
+}
+*/ * {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: aqua;
+  height: 2000px;
+}
+
+header,
+footer {
+  width: 100%;
+  height: 70px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  line-height: 70px;
+  float: left;
+}
+
+/* 40% + 20% + 10% + 10% + 5% + 5% = 90% головне, щоб не виходило за 100%* і була менша */
+
+header {
+  border-bottom: 4px solid gray;
+  margin-bottom: 50px;
+}
+
+main {
+  float: left;
+  text-align: center;
+  width: 40%;
+  margin-left: 10%;
+  border: 1px solid black;
+  padding: 20px 2.5%;
+}
+
+aside {
+  float: left;
+  text-align: center;
+  border: 1px solid white;
+  width: 20%;
+  padding: 20px 2.5%;
+  margin-left: 10%;
+  position: relative;
+}
+
+#add-to-card {
+  background: red;
+  color: white;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  position: fixed;
+  top: 100px;
+  left: 70px;
+  cursor: pointer;
+}
+
+.nav {
+  list-style: none;
+  display: block;
+  width: 50%;
+  margin-left: 25%;
+  float: left;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.nav li {
+  display: inline;
+  background-color: blue;
+
+  color: aliceblue;
+  padding: 0 20px;
+}
+
+.nav li:not(:last-of-type) {
+  margin-right: 20px;
+}
+
+#add-to-card:hover {
+  background: rgb(192, 101, 101);
+}
+
+footer {
+  border-top: 4px solid gray;
+  margin-top: 50px;
+}

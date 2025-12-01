@@ -1,0 +1,64 @@
+/* :root {
+  --main-color: #3498db;
+}
+
+h1 {
+  --main-color: #e74c3c;
+  background-color: var(--main-color, green);
+} */
+
+/* :root {
+  --bg-color: white;
+  --text-color: black;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+@media (max-width: 600px) {
+  .dark-theme {
+    --bg-color: #333;
+    --text-color: white;
+  }
+}
+.dark-theme {
+  --bg-color: #333;
+  --text-color: white;
+} */
+/* :root {
+  --primary-color: #3498db;
+  --button-bg: var(--primary-color);
+}
+
+h1 {
+  background-color: var(--button-bg);
+} */
+
+@property --main-color {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #3498db;
+}
+
+.button {
+  background-color: var(--main-color);
+}
+
+@property --gradient-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+.gradient-box {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(var(--gradient-angle), red, blue);
+  transition: --gradient-angle 0.5s;
+}
+
+.gradient-box:hover {
+  --gradient-angle: 90deg;
+}

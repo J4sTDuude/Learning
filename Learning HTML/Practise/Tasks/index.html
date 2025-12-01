@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Стиль для унікального елемента */
+      #logo {
+        color: red;
+        font-weight: bold;
+        font-size: 24px;
+      }
+
+      /* Стиль для групи елементів */
+      .student {
+        color: blue;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 1.Фото з описом -->
+
+    <img
+      src="cat.jpg"
+      width="300px"
+      title="Мій улюблений кіт"
+      alt="Милий котик"
+    />
+
+    <!-- 2.Меню сайту -->
+    <ul>
+      <li>
+        <a
+          href="https://www.yakaboo.ua/emocijnij-intelekt.html?gad_campaignid=20018959099"
+          >Головна</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.yakaboo.ua/ua/mistectvo-govoriti-taemnici-efektivnogo-spilkuvannja.html"
+          >Про нас</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.yakaboo.ua/ua/vzaemodija-z-vorogom-jak-pracjuvati-z-ljud-mi-jaki-ne-viklikajut-ni-doviri-ni-simpatij.html"
+          >Контакти</a
+        >
+      </li>
+    </ul>
+    <!-- 3. Форма з обов’язковими полями -->
+    <form action="">
+      <label for="">Ім'я</label>
+      <input type="text" required /> <br /><br />
+      <label for="">Email</label>
+      <input type="email" required /><br /><br />
+      <input type="submit" value="Відправити" />
+    </form>
+
+    <!-- 4. Семантична структура -->
+
+    <header>
+      <h1>Мій сайт</h1>
+    </header>
+    <main>
+      <article>
+        <h2>Мій заголовок</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sit
+          reprehenderit laborum ab ea facilis corrupti, et pariatur consectetur
+          expedita laboriosam voluptatem porro aliquam inventore laudantium
+          maiores eos cum culpa?
+        </p>
+      </article>
+    </main>
+    <footer>
+      <p>No copyright</p>
+    </footer>
+
+    <!-- 5. Таблиця -->
+
+    <table style="border: 1px solid black; width: 150px">
+      <thead>
+        <tr>
+          <th>Ім'я</th>
+          <th>Вік</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Юра</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td>Стас</td>
+          <td>21</td>
+        </tr>
+        <tr>
+          <td>Антон</td>
+          <td>32</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>This is an &lt;img /&gt; element ;</p>
+  </body>
+</html>

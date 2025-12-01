@@ -1,0 +1,82 @@
+img {
+  width: 300px;
+  height: 300px;
+  float: left;
+  margin-right: 20px;
+}
+
+/* .container {
+  border: 1px solid black;
+}
+
+.container::after {
+  content: "";
+  display: block;
+  clear: both;
+} */
+
+body {
+  border: solid 1px black;
+}
+.relative {
+  position: relative;
+  top: 30px;
+  left: 100px;
+}
+
+/* .positioned {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  background-color: coral;
+} */
+
+.positioned {
+  position: sticky;
+  top: 30px;
+  left: 30px;
+}
+h1 {
+  position: fixed;
+  top: 0;
+  width: 500px;
+  background: white;
+  padding: 10px;
+}
+
+.container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+}
+
+.box1 {
+  position: absolute;
+  z-index: 1;
+  background: lightcoral;
+  top: 20px;
+  left: 20px;
+  width: 100px;
+  height: 100px;
+}
+
+.box2 {
+  position: absolute;
+  z-index: 3;
+  background: gold;
+  top: 40px;
+  left: 40px;
+  width: 100px;
+  height: 100px;
+}
+
+.box3 {
+  position: absolute;
+  z-index: 2;
+  background: lightgreen;
+  top: 60px;
+  left: 60px;
+  width: 100px;
+  height: 100px;
+}

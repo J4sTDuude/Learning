@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(#b3e6ff, #b3e6ff 60%, green 60%);
+}
+
+#house {
+  position: relative;
+
+  width: 500px;
+  height: 400px;
+  background-color: #ff9980;
+  margin: auto;
+  border: 6px solid #b35900;
+}
+
+#house div {
+  position: absolute;
+}
+
+#chimney {
+  width: 90px;
+  height: 100px;
+  top: -100px;
+  left: 65%;
+  background: repeating-linear-gradient(
+    #e6e6e6,
+    #e6e6e6 10%,
+    black 10%,
+    black 12%
+  );
+  border: 2px solid black;
+  z-index: -1;
+}
+
+#smoke {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(128, 128, 128, 0.514);
+  border-radius: 100%;
+  right: 25px;
+  bottom: 80px;
+  border: none;
+  box-shadow: 0px -10px 10px 10px rgba(128, 128, 128, 0.514);
+}
+
+#roof {
+  width: 100%;
+  height: 120px;
+  top: 0;
+  border: 0;
+  background: repeating-linear-gradient(
+      45deg,
+      #b35900,
+      #b35900 2%,
+      transparent 2%,
+      transparent 5%
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      #b35900,
+      #b35900 2%,
+      #ff9980 2%,
+      #ff9980 5%
+    );
+}
+
+#window-1 {
+  top: 170px;
+  left: 40px;
+  width: 100px;
+  height: 105px;
+  border: 6px solid #b35900;
+  background: linear-gradient(
+    to right,
+    #ffffb2,
+    #ffffb2 48%,
+    #b35900 48%,
+    #b35900 52%,
+    #ffffb2 52%
+  );
+}
+
+#window-2 {
+  top: 170px;
+  right: 40px;
+  width: 100px;
+  height: 105px;
+  border: 6px solid #b35900;
+  background-color: #ffffb2;
+  background: linear-gradient(
+    to right,
+    #ffffb2,
+    #ffffb2 48%,
+    #b35900 48%,
+    #b35900 52%,
+    #ffffb2 52%
+  );
+}
+
+#door {
+  left: 185px;
+  bottom: 0;
+  width: 120px;
+  height: 180px;
+  border: 6px solid #b35900;
+  background-color: #e6e6e6;
+  transform: translateY(6px);
+}
+
+#door-handle {
+  width: 20px;
+  height: 20px;
+  background-color: #b35900;
+  right: 10px;
+  top: 70px;
+  border-radius: 100%;
+}

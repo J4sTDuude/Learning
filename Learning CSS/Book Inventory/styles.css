@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+span {
+  display: inline-block;
+}
+
+td,
+th {
+  text-align: center;
+  padding: 0.3em;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100vw;
+}
+
+thead {
+  background-image: linear-gradient(
+    rgba(152, 228, 238, 0.452),
+    rgb(72, 170, 250)
+  );
+}
+
+tr[class="read"] {
+  background-image: linear-gradient(
+    rgba(152, 238, 152, 0.452),
+    rgb(72, 250, 72)
+  );
+}
+
+tr[class="to-read"] {
+  background-image: linear-gradient(
+    rgba(247, 154, 154, 0.452),
+    rgb(245, 47, 47)
+  );
+}
+
+tr[class="in-progress"] {
+  background-image: linear-gradient(
+    rgba(243, 234, 106, 0.452),
+    rgb(252, 249, 61)
+  );
+}
+
+tr[class="read"] span[class="status"] {
+  border: 0.1em solid hsl(120, 75%, 45%);
+  background-image: linear-gradient(hsl(120, 75%, 75%), hsl(120, 75%, 50%));
+}
+
+tr[class="to-read"] span[class="status"] {
+  border: 0.1em solid hsl(0, 75%, 45%);
+  background-image: linear-gradient(hsl(0, 75%, 75%), hsl(0, 75%, 50%));
+}
+tr[class="in-progress"] span[class="status"] {
+  border: 0.1em solid hsla(61, 100%, 50%, 0.705);
+  background-image: linear-gradient(
+    hsla(59, 89%, 63%, 0.637),
+    hsl(54, 100%, 50%)
+  );
+}
+
+span[class="status"],
+span[class^="rate"] {
+  height: 1.85em;
+  width: 7em;
+  padding: 0.3em;
+}
+
+span[class^="rate"] > span {
+  border: 0.1em solid hsl(0, 0%, 50%);
+  width: 20%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: hsl(0, 15%, 95%);
+  margin: 0.1em;
+}
+
+span[class="status"] {
+  border-radius: 20px;
+}
+
+span[class~="one"] span:first-child {
+  background-image: linear-gradient(orange);
+}
+
+span[class~="two"] span:nth-child(1),
+span[class~="two"] span:nth-child(2) {
+  background-image: linear-gradient(orange);
+}
+
+span[class~="three"] span {
+  background-image: linear-gradient(orange);
+}
