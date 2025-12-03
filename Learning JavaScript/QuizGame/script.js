@@ -37,4 +37,21 @@ const getRandomQuestion = (questionsArr) => {
   return questionsArr[rand];
 };
 
-console.log(getRandomQuestion(questions));
+const getRandomComputerChoice = (choicesArr) => {
+  const rand = Math.round(Math.random() * (choicesArr.length - 1));
+  return choicesArr[rand];
+};
+
+const getResults = (question, compChoice) => {
+  if (compChoice === question.answer) {
+    return "The computer's choice is correct!";
+  } else {
+    return `The computer's choice is wrong. The correct answer is: ${question.answer}`;
+  }
+};
+
+console.log(getRandomComputerChoice(questions[0].choices));
+
+console.log(getResults(questions[0], "42"));
+
+// console.log(getRandomQuestion(questions[0].choices));
